@@ -1,6 +1,7 @@
 {
     "name": "jimjam88/observer",
     "description": "Observer pattern for PHP with C# like event arguments",
+    "license": "proprietary",
     "autoload": {
         "psr-4": {
             "Observer\\": "."
