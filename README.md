@@ -4,7 +4,7 @@ Very simple observer pattern for PHP with C# like event arguments.
 
 ## Usage
 
-Create a subject by extending the SubjectAbstract or by implementing the SubjectInterface...
+Create a subject by extending the `Observer\Subject\SubjectAbstract` or by implementing the `Observer\Subject\SubjectInterface`...
 
 ```php
 use Observer\Subject\SubjectAbstract;
@@ -63,6 +63,8 @@ class ObserverA implements ObserverInterface
 {
     public function notify(EventArgs $args)
     {
+        var_dump(__CLASS__);
+
         var_dump($args->getInfo());
 
         call_user_func($args->getCallback());
@@ -73,6 +75,8 @@ class ObserverB implements ObserverInterface
 {
     public function notify(EventArgs $args)
     {
+        var_dump(__CLASS__);
+
         var_dump($args->getInfo());
 
         call_user_func($args->getCallback());
