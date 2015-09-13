@@ -1,0 +1,12 @@
+{
+    "name": "jimjam88/observer",
+    "description": "Observer pattern for PHP with C# like event arguments",
+    "autoload": {
+        "psr-4": {
+            "Observer\\": "."
+        }
+    },
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
