@@ -58,6 +58,7 @@ Now create some observers. Observers must implement the `Observer\Observer\Obser
 
 ```php
 use Observer\Observer\ObserverInterface;
+use Observer\Event\EventArgs;
 
 class ObserverA implements ObserverInterface
 {
